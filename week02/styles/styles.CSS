@@ -1,3 +1,4 @@
+/* ---------- Navigation ---------- */
 nav {
     background-color: yellowgreen;
     padding: 10px;
@@ -9,24 +10,15 @@ nav a {
     padding: 20px;
 }
 
+/* ---------- Heading ---------- */
 h1 {
     color: darkgreen;
 }
 
-img {
-    width: 150px;
-    height: auto;
-    border: 1px solid blue;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-}
-
-p {
-    padding: 0;
-}
-
+/* ---------- Main content ---------- */
 main {
     max-width: 840px;
+    margin: 0 auto;
 }
 
 main img {
@@ -37,6 +29,7 @@ main img {
     box-shadow: 0 0 30px gray;
 }
 
+/* ---------- Aside ---------- */
 aside {
     width: 20em;
     margin: 1em;
@@ -52,6 +45,12 @@ aside img {
     height: auto;
 }
 
+/* ---------- Paragraphs ---------- */
+p {
+    padding: 0;
+}
+
+/* ---------- Footer ---------- */
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
