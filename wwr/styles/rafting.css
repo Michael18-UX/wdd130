@@ -1,0 +1,255 @@
+/* =====================================
+   1. CSS VARIABLES
+===================================== */
+
+:root {
+    --primary-color: #1b4965;
+    --secondary-color: #e9c46a;
+    --accent-color: #2a9d8f;
+    --heading-color: #ffffff;
+    --text-color: #222222;
+    --background-color: #f4f4f4;
+
+    --heading-font: Arial, sans-serif;
+    --body-font: Arial, sans-serif;
+}
+
+/* =====================================
+   2. CSS RESET
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =====================================
+   3. BODY STYLING
+===================================== */
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+/* =====================================
+   4. HEADER, MAIN AND FOOTER
+===================================== */
+
+header,
+main,
+footer {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* =====================================
+   5. HEADER STYLING
+===================================== */
+
+header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+/* =====================================
+   6. NAVIGATION STYLING
+===================================== */
+
+nav {
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--heading-color);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+/* =====================================
+   7. HEADING STYLING
+===================================== */
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+/* =====================================
+   8. PARAGRAPH AND SECTION STYLING
+===================================== */
+
+p {
+    margin: 10px 0;
+    padding: 5px;
+}
+
+section {
+    margin: 25px 0;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+/* =====================================
+   9. HERO SECTION
+===================================== */
+
+.hero {
+    position: relative;
+    margin-top: 20px;
+}
+
+.hero > img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* =====================================
+   10. HERO HEADING OVERLAY
+===================================== */
+
+.hero h1 {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    color: var(--heading-color);
+    background-color: rgba(27, 73, 101, 0.85);
+    font-size: 2rem;
+    z-index: 2;
+}
+
+/* =====================================
+   11. HERO ARTICLE OVERLAY
+===================================== */
+
+.hero article {
+    position: absolute;
+    top: 23%;
+    left: 2%;
+    width: 96%;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    z-index: 2;
+    overflow: auto;
+}
+
+.hero article img {
+    float: right;
+    width: 20%;
+    margin: 0 0 10px 15px;
+    border: 3px solid #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.hero article p {
+    padding: 5px;
+}
+
+/* =====================================
+   12. FOOTER STYLING
+===================================== */
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--heading-color);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* =====================================
+   13. SOCIAL MEDIA LINKS
+===================================== */
+
+.socialmedia {
+    display: flex;
+    gap: 15px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+/* =====================================
+   14. RESPONSIVE DESIGN
+===================================== */
+
+@media screen and (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 1.2rem;
+        padding: 8px;
+    }
+
+    .hero article {
+        top: 25%;
+        padding: 8px;
+        font-size: 0.75rem;
+    }
+
+    .hero article img {
+        width: 25%;
+    }
+
+    section {
+        padding: 12px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
