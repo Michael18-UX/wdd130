@@ -12,6 +12,7 @@
 
     --heading-font: Arial, sans-serif;
     --body-font: Arial, sans-serif;
+
 }
 
 /* =====================================
@@ -42,8 +43,7 @@ body {
 header,
 main,
 footer {
-    max-width: 1000px;
-    width: 90%;
+    width: 840px;
     margin: 0 auto;
 }
 
